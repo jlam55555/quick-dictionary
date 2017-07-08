@@ -17,7 +17,7 @@ $(function() {
 
   $("input").keydown(function(event) {
     if(event.which == 13) {
-      $("head").append($("<script>").attr("src", "http://api.wordnik.com/v4/word.json/" + $(this).val() + "/definitions?sourceDictionaries=all&api_key=e08c4dfc13c1234cd80040fccef03a5ef76e72b854c08995f&callback=response"));
+      $("head").append($("<script>").attr("src", "https://api.wordnik.com/v4/word.json/" + $(this).val() + "/definitions?sourceDictionaries=all&api_key=e08c4dfc13c1234cd80040fccef03a5ef76e72b854c08995f&callback=response"));
       $(this).val("");
     }
   });
